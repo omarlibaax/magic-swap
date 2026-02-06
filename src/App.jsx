@@ -166,9 +166,6 @@ function App() {
         const origG = data[i + 1]
         const origB = data[i + 2]
         
-        // Calculate luminance to preserve texture
-        const luminance = 0.299 * origR + 0.587 * origG + 0.114 * origB
-        
         // Preserve texture and shadows using luminance-based blending
         const luminance = 0.299 * origR + 0.587 * origG + 0.114 * origB
         const normalizedLum = luminance / 255
